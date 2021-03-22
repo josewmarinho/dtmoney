@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
+export const Container = styled.div`
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 2rem;
@@ -24,6 +24,11 @@ export const Container = styled.header`
          font-size: 2rem;
          font-weight: 500;
          line-height: 3rem;
+      }
+
+      &.highlight-background {
+         background: var(--green);
+         color: #FFF;
       }
    }
 `;
